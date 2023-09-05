@@ -1,0 +1,373 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    color: rgba(0, 0, 0, 0.9);
+    list-style: none;
+   
+    
+}
+/* ----navbar start------ */
+
+#navbar {
+
+    grid-area: navbar;
+    /* border: 1px solid black; */
+    height: 44px;
+    background: #fbfbfdf8;
+    position: sticky;
+    top: 0;
+
+}
+
+.nav-content {
+    width: 1034px;
+    height: 100%;
+    /* border: 1px solid black; */
+    margin: auto;
+
+
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 0.2px;
+    cursor: pointer;
+    ;
+
+
+
+}
+
+.nav-link {
+
+    font-family: 'Roboto', sans-serif;
+    /* border: 1px solid red; */
+
+}
+
+
+/* ---------nav end---------- */
+
+
+
+
+/* landing page */
+
+.product-page1 {
+    grid-area: product-page1;
+    height: auto;
+
+}
+
+#landing-page {
+    grid-area: landing-page;
+    height: 591px;
+    background: #f3f2f5;
+
+    /* border: 1px solid black; */
+}
+
+h2 {
+    font-size: 54px;
+    line-height: 1.07143;
+    /* font-weight:lighter; */
+    /* letter-spacing: .001em; */
+    text-align: center;
+    margin-top: 54px;
+
+}
+
+h3 {
+    font-size: 29px;
+    line-height: 2.07143;
+    font-weight: lighter;
+    /* letter-spacing: .001em; */
+    text-align: center;
+}
+
+h4 {
+    font-size: 23px;
+    line-height: 1.07143;
+    font-weight: lighter;
+    /* letter-spacing: .001em; */
+    text-align: center;
+    color: #3987d6;
+}
+
+h4>a {
+    color: #3987d6;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+sup {
+    font-size: 16px;
+}
+
+.product-pic {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    /* margin-top: 40px; */
+}
+
+.product-page1 .product-pic * {
+    /* border: 1px solid red; */
+    margin-top: 58px;
+
+}
+
+/* ----Grid template of Webpage-------- */
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 'navbar navbar navbar navbar navbar navbar'
+        'product-page1 product-page1 product-page1 product-page1 product-page1 product-page1'
+        'product-page2 product-page2 product-page2 product-page2 product-page2 product-page2'
+        'footer footer footer footer footer footer'
+
+    ;
+}
+
+.product-page1 {
+    display: grid;
+    grid-template-areas: 'landing-page landing-page landing-page landing-page '
+        'macbook macbook macbook macbook '
+        'iphone iphone iphone iphone '
+
+    ;
+}
+.footer{
+    grid-area: footer;
+}
+.product-page2 {
+    grid-area: product-page2;
+    /* display: flex; */
+
+}
+
+.products {
+    /* border: 2px solid blue; */
+    /* width: fit-content; */
+    width: 655.5px;
+    height: 580px;
+    margin: 6px;
+
+}
+
+.products>img {
+    width: auto;
+    object-fit: contain;
+    width: fit-content
+}
+
+.product-page2 {
+    display: flex;
+    flex-wrap: wrap;
+    width: fit-content;
+    height: auto;
+    margin: auto;
+    justify-content: center;
+    /* border: 1px solid green; */
+}
+
+/* product information and cards */
+
+.items,
+#macbook {
+    margin-top: 10px;
+    height: 591px;
+    background: #fafafa;
+
+    grid-area: macbook;
+
+}
+
+#iphone {
+    height: 591px;
+    background: #fafafa;
+
+    grid-area: iphone;
+
+}
+
+/* .items>* {
+    position: relative;
+} */
+
+
+
+
+
+/* -------------footer------------- */
+
+/* footer main container */
+.footer {
+    /* width: 98vw; */
+    font-size: 12px;
+    background-color: rgb(245, 245, 247);
+    overflow-x: hidden;
+}
+
+.footer-main-container-box {
+    width: 1020px;
+    margin: auto;
+    padding: 0 22px;
+
+}
+
+.footer ul li {
+    font-size: 12px;
+    /* line-height: 1.33337; */
+    /* font-weight: 400; */
+    color: #6E6E73;
+    text-align: justify;
+    padding: 0 0 10px 0;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+
+}
+
+#footer-box-child-1 {
+    padding: 17px 0 11px 0;
+    border-bottom: 1px solid #D2D2D7;
+}
+
+#footer-box-child-2 {
+    padding: 20px 0 0 0;
+    /* border: 0.5px solid grey; */
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+
+}
+.footer-box h3 {
+    font-size: 12px;
+    font-weight: 600;
+    color: #4c4c4e;
+    text-align: left;
+    margin-bottom: 8px;
+    margin-top: 0;
+
+}
+.footer-box{
+    /* border: 0.2px solid black; */
+    flex: 1 1 auto;
+}
+.footer-box > .footer-items {
+    /* border: 0.2px solid red; */
+    margin-bottom: 10px;   
+}
+
+.footer-bottom-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid blue; */
+    
+}
+
+.footer-bottom-box div{
+    /* border: 1px solid red; */
+    align-items: center;
+   
+}
+#footer-bottom-box-child1{
+    border-bottom: 1px solid #d2d2d7;
+}
+#footer-bottom-box-child1 a {
+    color: rgb(100,160,222);
+}
+.footer-bottom-box div ul{
+    display: flex;
+    flex-direction: row;
+   
+}
+.footer-bottom-box div:nth-child(odd) ul li{
+    margin: 0;
+    padding: 0;
+}
+.footer-bottom-box div:nth-child(3) ul li:hover{
+   cursor: pointer;
+   text-decoration: underline;
+}
+.footer-bottom-box div:nth-child(2) ul li{
+    
+    border-right: 1px solid grey;
+    margin-bottom: 0;
+    padding: 0 10px 0 10px;
+
+}
+  
+#footer-bottom-box-child2 div:nth-child(2){
+    margin-left: -9%; 
+}
+#footer-bottom-box-child2 div:nth-child(2) li:hover {
+      text-decoration: underline;
+      cursor: pointer;
+
+
+  }
+#footer-bottom-box-child2{
+     margin: 10px 0 20px 0;
+  }
+
+  #footer-box-child-2 ul > li:hover{
+     cursor: pointer;
+     text-decoration: underline;
+ }
+
+  /* ------------footer end---------------- */
+
+
+
+  
+
+
+
+/* For mobile devices: */
+@media only screen and (max-width: 480px) {
+  /* Your styles for mobile devices here. */
+  .nav-list{
+    display: none;
+    
+  }
+  #navbar{
+    zoom: 2;
+  }
+  #landing-page{
+    zoom: 2;
+    height: 80vh;
+  }
+}
+
+/* For tablets: */
+@media only screen and (max-width: 767px) {
+  /* Your styles for tablets here. */
+
+
+}
+
+/* For desktops: */
+@media only screen and (min-width: 768px) {
+  /* Your styles for desktops here. */
+}
+
+/* For extra large screens: */
+@media only screen and (min-width: 1280px) {
+  /* Your styles for extra large screens here. */
+}
