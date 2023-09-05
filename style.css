@@ -342,7 +342,7 @@ sup {
 /* For mobile devices: */
 @media only screen and (max-width: 480px) {
   /* Your styles for mobile devices here. */
-  .nav-list{
+/*   .nav-list{
     display: none;
     
   }
@@ -354,7 +354,7 @@ sup {
     height: 80vh;
   }
 }
-
+ */
 /* For tablets: */
 @media only screen and (max-width: 767px) {
   /* Your styles for tablets here. */
