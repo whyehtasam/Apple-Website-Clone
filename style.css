@@ -343,7 +343,7 @@ sup {
 /* For mobile devices: */
 @media only screen and (max-width: 480px) {
   /* Your styles for mobile devices here. */
-  .nav-list{
+  /* .nav-list{
     display: none !important;
     
   }
@@ -353,7 +353,7 @@ sup {
   #landing-page{
     zoom: 2 !important;
     height: 80vh !important;
-  }
+  } */
 }
 
 /* For tablets: */
