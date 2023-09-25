@@ -6,7 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Apple</title>
     <link rel="stylesheet" href="style.css">
-    <link type="image/png" sizes="16x16" rel="icon" href="./icons8-apple-16.png">
+    <link type="image/png" sizes="16x16" rel="icon" href="/icons8-apple-16.png">
+    <!-- ----bootstrap css----- -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- ------bootstrap js --------->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -15,7 +24,7 @@
         <div class="item" id="navbar">
             <div class="nav-content">
                 <div class="nav-list">
-                    <div class="nav-link" id="icon"><img src="./icons8-apple-32.png" alt="" width="20px"></div>
+                    <div class="nav-link" id="icon"><img src="/icons8-apple-32.png" alt="" width="20px"></div>
                     <div class="nav-link">Store</div>
                     <div class="nav-link">Mac</div>
                     <div class="nav-link">iPad</div>
@@ -27,8 +36,8 @@
                     <div class="nav-link">Entertainment</div>
                     <div class="nav-link">Accessories</div>
                     <div class="nav-link">Support</div>
-                    <div class="nav-link" id="search"><img src="./icons8-search-32.png" alt="" width="20px"></div>
-                    <div class="nav-link" id="buy-item"><img src="./icons8-shopping-bag-32.png" alt="" width="20px">
+                    <div class="nav-link" id="search"><img src="/icons8-search-32.png" alt="" width="20px"></div>
+                    <div class="nav-link" id="buy-item"><img src="/icons8-shopping-bag-32.png" alt="" width="20px">
                     </div>
                 </div>
             </div>
@@ -47,7 +56,7 @@
 
                 </div>
                 <div class="product-pic">
-                    <img src="./product laptop.png" alt="">
+                    <img src="/product laptop.png" alt="">
                 </div>
 
             </div>
@@ -62,7 +71,7 @@
 
                 </div>
                 <div class="product-pic">
-                    <img src="./macbook air 15.png" alt="">
+                    <img src="/macbook air 15.png" alt="">
                 </div>
             </div>
 
@@ -76,7 +85,7 @@
 
                 </div>
                 <div class="product-pic">
-                    <img src="./iphone 14.png" alt="">
+                    <img src="/iphone 14.png" alt="">
                 </div>
             </div>
 
@@ -87,16 +96,9 @@
         <div class="product-page2">
 
             <div class="products" id="">
-                <!-- <div class="heading">
-                    <h2>iPhone 14 </h2>
 
-                    <h3>Wonderfull.</h3>
-
-                    <h4><a href="">Learn more</a> > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">Buy</a> ></h4>
-
-                </div> -->
                 <div class="product-pic">
-                    <img src="./iphone 14 pro 1.png" alt="">
+                    <img src="/iphone 14 pro 1.png" alt="">
                 </div>
 
             </div>
@@ -110,7 +112,7 @@
 
                 </div> -->
                 <div class="product-pic">
-                    <img src="./ipad pro.png" alt="">
+                    <img src="/ipad pro.png" alt="">
                 </div>
 
             </div>
@@ -124,7 +126,7 @@
 
                 </div> -->
                 <div class="product-pic">
-                    <img src="./watch series 8.png" alt="">
+                    <img src="/watch series 8.png" alt="">
                 </div>
 
             </div>
@@ -138,7 +140,7 @@
 
                 </div> -->
                 <div class="product-pic">
-                    <img src="./vision pro.png" alt="">
+                    <img src="/vision pro.png" alt="">
                 </div>
 
             </div>
@@ -152,7 +154,7 @@
 
                 </div> -->
                 <div class="product-pic">
-                    <img src="./trade in.png" alt="">
+                    <img src="/trade in.png" alt="">
                 </div>
 
             </div>
@@ -166,9 +168,47 @@
 
                 </div> -->
                 <div class="product-pic">
-                    <img src="./card.png" alt="">
+                    <img src="/card.png" alt="">
                 </div>
 
+            </div>
+
+            <!-- ----crousel---- -->
+            <div class="container">
+                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner" data-bs-interval="2000">
+                        <div class="carousel-item active">
+                            <img src="/crousel1.png" class="d-block w-100" alt="...">
+
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="/crousel1.png" class="d-block w-100" alt="...">
+
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="/crousel1.png" class="d-block w-100" alt="...">
+
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
             </div>
 
 
@@ -208,7 +248,8 @@
                             about Apple Card.
                         </li>
                         <li class="footer-content-description">
-                            Learn more about how Apple Card applications are evaluated at <a href="">support.apple.com/kb/HT209218.</a>
+                            Learn more about how Apple Card applications are evaluated at <a
+                                href="">support.apple.com/kb/HT209218.</a>
                         </li>
                         <li class="footer-content-description">
                             A subscription is required for Apple TV+.
@@ -362,7 +403,7 @@
                                 <li class="footer-lists">Investors</li>
                                 <li class="footer-lists">Ethics & Compliance</li>
                                 <li class="footer-lists">Events</li>
-                                <li class="footer-lists" >Contact Apple</li>
+                                <li class="footer-lists">Contact Apple</li>
                             </ul>
                         </div>
 
@@ -374,7 +415,8 @@
 
                     <ul>
                         <li>
-                            More ways to shop: <a href="">Find an Apple Store</a> or <a href="">other retailer</a> near you. Or call
+                            More ways to shop: <a href="">Find an Apple Store</a> or <a href="">other retailer</a> near
+                            you. Or call
                             1-800-MY-APPLE.
                         </li>
                     </ul>
