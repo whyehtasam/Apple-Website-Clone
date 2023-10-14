@@ -125,7 +125,12 @@ sup {
 
 .product-page1 .product-pic * {
     /* border: 1px solid red !important; */
-    margin-top: 58px !important;
+    margin-top: 10px ;
+
+}
+.product-page1 #img2 {
+    /* border: 1px solid red !important; */
+    margin-top: 80px ;
 
 }
 
@@ -173,8 +178,8 @@ sup {
     width: fit-content
 }
 
-.product-page2 {
-    display: flex !important;
+ .grid-container .product-page2 {
+    display: flex ;
     flex-wrap: wrap !important;
     width: fit-content !important;
     height: auto !important;
