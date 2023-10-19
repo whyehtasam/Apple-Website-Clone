@@ -70,7 +70,7 @@
 
 #landing-page {
     grid-area: landing-page !important;
-    height: 591px !important;
+    height: 591px;
     background: #f3f2f5 !important;
 
     /* border: 1px solid black !important; */
@@ -196,7 +196,7 @@ sup {
 .items,
 #macbook {
     margin-top: 10px !important;
-    height: 591px !important;
+    height: 591px ;
     background: #fafafa !important;
 
     grid-area: macbook !important;
@@ -204,7 +204,7 @@ sup {
 }
 
 #iphone {
-    height: 591px !important;
+    height: 591px ;
     background: #fafafa !important;
 
     grid-area: iphone !important;
@@ -356,23 +356,47 @@ sup {
 /* For mobile devices: */
 @media only screen and (max-width: 480px) {
   /* Your styles for mobile devices here. */
-  /* .nav-list{
+  .nav-list{
     display: none !important;
     
   }
   #navbar{
-    zoom: 2 !important;
+    height: 120px !important;
   }
-  #landing-page{
-    zoom: 2 !important;
-    height: 80vh !important;
-  } */
+  .product-page1{
+    zoom: 1.9;
+    margin-left: -218px;
+    
+    overflow: hidden;
+  }
+
+  .product-page1 > .items {
+    height: 84vh !important;
+  }
   .grid-container .product-page2  .p2-container{
 
     flex-direction: column;
     /* border: 5px solid red; */
     width: 100%;
     
+  }
+  .p2-container .products{
+    aspect-ratio: 3/4 !important;
+    /* border: 1px solid black; */
+    overflow: hidden;
+    
+  }
+  .p2-container .products .product-pic{
+    /* object-fit: fill; */
+    /* width: 1500px; */
+    height: 100%;
+    /* border: 1px solid red; */
+    
+
+  }
+  .p2-container .products .product-pic img{
+    object-fit: cover;
+   
   }
   .grid-container .product-page2  .p2-container > .products{
 
@@ -381,9 +405,7 @@ sup {
     /* width: 100vw; */
     width: calc(98%) !important;
   }
-  .products{
-    ;
-  }
+  
 
 }
 
