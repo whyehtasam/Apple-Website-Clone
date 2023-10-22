@@ -48,7 +48,7 @@
     font-weight: lighter !important;
 }
 .nav-list #hamburger-menu {
-    /* display: none; */
+    display: none;
 }
 
 .nav-link:hover {
