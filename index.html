@@ -16,6 +16,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
+
+    <!-- Jquery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -65,16 +68,33 @@
                     <div class="nav-link" id="hamburger-menu">
 
                         <svg xmlns="http://www.w3.org/2000/svg" width="15" height="44" viewBox="0 -12 14 44">
-                            <polyline id="globalnav-menutrigger-bread-bottom" fill="rgba(255, 255, 255, 0.8)" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" points="2 12, 16 12" class="globalnav-menutrigger-bread globalnav-menutrigger-bread-bottom">
-                              <animate id="globalnav-anim-menutrigger-bread-bottom-open" attributeName="points" keyTimes="0;0.5;1" dur="0.24s" begin="indefinite" fill="freeze" calcMode="spline" keySplines="0.42, 0, 1, 1;0, 0, 0.58, 1" values=" 2 12, 16 12; 2 9, 16 9; 3.5 15, 15 3.5"/>
-                              <animate id="globalnav-anim-menutrigger-bread-bottom-close" attributeName="points" keyTimes="0;0.5;1" dur="0.24s" begin="indefinite" fill="freeze" calcMode="spline" keySplines="0.42, 0, 1, 1;0, 0, 0.58, 1" values=" 3.5 15, 15 3.5; 2 9, 16 9; 2 12, 16 12"/>
+                            <polyline id="globalnav-menutrigger-bread-bottom" fill="rgba(255, 255, 255, 0.8)"
+                                stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"
+                                points="2 12, 16 12"
+                                class="globalnav-menutrigger-bread globalnav-menutrigger-bread-bottom">
+                                <animate id="globalnav-anim-menutrigger-bread-bottom-open" attributeName="points"
+                                    keyTimes="0;0.5;1" dur="0.24s" begin="indefinite" fill="freeze" calcMode="spline"
+                                    keySplines="0.42, 0, 1, 1;0, 0, 0.58, 1"
+                                    values=" 2 12, 16 12; 2 9, 16 9; 3.5 15, 15 3.5" />
+                                <animate id="globalnav-anim-menutrigger-bread-bottom-close" attributeName="points"
+                                    keyTimes="0;0.5;1" dur="0.24s" begin="indefinite" fill="freeze" calcMode="spline"
+                                    keySplines="0.42, 0, 1, 1;0, 0, 0.58, 1"
+                                    values=" 3.5 15, 15 3.5; 2 9, 16 9; 2 12, 16 12" />
                             </polyline>
-                            <polyline id="globalnav-menutrigger-bread-top" fill="rgba(255, 255, 255, 0.8)" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" points="2 5, 16 5" class="globalnav-menutrigger-bread globalnav-menutrigger-bread-top">
-                              <animate id="globalnav-anim-menutrigger-bread-top-open" attributeName="points" keyTimes="0;0.5;1" dur="0.24s" begin="indefinite" fill="freeze" calcMode="spline" keySplines="0.42, 0, 1, 1;0, 0, 0.58, 1" values=" 2 5, 16 5; 2 9, 16 9; 3.5 3.5, 15 15"/>
-                              <animate id="globalnav-anim-menutrigger-bread-top-close" attributeName="points" keyTimes="0;0.5;1" dur="0.24s" begin="indefinite" fill="freeze" calcMode="spline" keySplines="0.42, 0, 1, 1;0, 0, 0.58, 1" values=" 3.5 3.5, 15 15; 2 9, 16 9; 2 5, 16 5"/>
+                            <polyline id="globalnav-menutrigger-bread-top" fill="rgba(255, 255, 255, 0.8)"
+                                stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"
+                                points="2 5, 16 5" class="globalnav-menutrigger-bread globalnav-menutrigger-bread-top">
+                                <animate id="globalnav-anim-menutrigger-bread-top-open" attributeName="points"
+                                    keyTimes="0;0.5;1" dur="0.24s" begin="indefinite" fill="freeze" calcMode="spline"
+                                    keySplines="0.42, 0, 1, 1;0, 0, 0.58, 1"
+                                    values=" 2 5, 16 5; 2 9, 16 9; 3.5 3.5, 15 15" />
+                                <animate id="globalnav-anim-menutrigger-bread-top-close" attributeName="points"
+                                    keyTimes="0;0.5;1" dur="0.24s" begin="indefinite" fill="freeze" calcMode="spline"
+                                    keySplines="0.42, 0, 1, 1;0, 0, 0.58, 1"
+                                    values=" 3.5 3.5, 15 15; 2 9, 16 9; 2 5, 16 5" />
                             </polyline>
-                          </svg>
-                          
+                        </svg>
+
                     </div>
                 </div>
             </div>
@@ -274,8 +294,8 @@
 
                     <div class="footer-box">
                         <div class="footer-items">
+                            <h3 id="nav-header">Shop and Learn<span class=".rotate-icon"> <img src="/plus.png" alt=""></span></h3>
                             <ul>
-                                <h3>Shop and Learn</h3>
                                 <li class="footer-lists">Store</li>
                                 <li class="footer-lists">Mac</li>
                                 <li class="footer-lists">iPad</li>
@@ -290,8 +310,8 @@
                             </ul>
                         </div>
                         <div class="footer-items">
+                            <h3>Apple Wallet <span class=".rotate-icon"> <img src="/plus.png" alt=""></span></h3>
                             <ul>
-                                <h3>Apple Wallet</h3>
                                 <li class="footer-lists">Wallet</li>
                                 <li class="footer-lists">Apple Card</li>
                                 <li class="footer-lists">Apple Pay</li>
@@ -303,8 +323,7 @@
 
                     <div class="footer-box">
                         <div class="footer-items">
-
-                            <h3>Account</h3>
+                            <h3>Account <span class=".rotate-icon"> <img src="/plus.png" alt=""></span></h3>
                             <ul>
                                 <li class="footer-lists">Manage Your Apple ID</li>
                                 <li class="footer-lists">Apple Store Account</li>
@@ -313,8 +332,7 @@
 
                         </div>
                         <div class="footer-items">
-
-                            <h3>Entertainment</h3>
+                            <h3>Entertainment <span class=".rotate-icon"> <img src="/plus.png" alt=""></span></h3>
                             <ul>
                                 <li class="footer-lists">Apple One</li>
                                 <li class="footer-lists">Apple TV+</li>
@@ -332,7 +350,7 @@
 
                     <div class="footer-box">
                         <div class="footer-items">
-                            <h3>Apple Store</h3>
+                            <h3>Apple Store <span class=".rotate-icon"> <img src="/plus.png" alt=""></span></h3>
                             <ul>
                                 <li class="footer-lists">Find a Store</li>
                                 <li class="footer-lists">Genius Bar</li>
@@ -352,7 +370,7 @@
                     <div class="footer-box">
 
                         <div class="footer-items">
-                            <h3>For Business</h3>
+                            <h3>For Business <span class=".rotate-icon"> <img src="/plus.png" alt=""></span></h3>
                             <ul>
                                 <li class="footer-lists">Apple and Business</li>
                                 <li class="footer-lists">Shop for Business</li>
@@ -360,8 +378,8 @@
                         </div>
 
                         <div class="footer-items">
+                            <h3>For Education <span class=".rotate-icon"> <img src="/plus.png" alt=""></span></h3>
                             <ul>
-                                <h3>For Education</h3>
                                 <li class="footer-lists">Apple and Education</li>
                                 <li class="footer-lists">Shop for K-12</li>
                                 <li class="footer-lists">Shop for College</li>
@@ -370,7 +388,7 @@
                         </div>
 
                         <div class="footer-items">
-                            <h3>For Healthcare</h3>
+                            <h3>For Healthcare <span class=".rotate-icon"> <img src="/plus.png" alt=""></span></h3>
                             <ul>
                                 <li class="footer-lists">Apple in Healthcare</li>
                                 <li class="footer-lists">Health on Apple Watch</li>
@@ -378,7 +396,7 @@
                             </ul>
                         </div>
                         <div class="footer-items">
-                            <h3>For Government</h3>
+                            <h3>For Government<span class=".rotate-icon"> <img src="/plus.png" alt=""></span></h3>
                             <ul>
                                 <li class="footer-lists">Shop for Government</li>
                                 <li class="footer-lists">Shop for Veterans and Military</li>
@@ -389,7 +407,7 @@
                     <div class="footer-box">
 
                         <div class="footer-items">
-                            <h3>Apple Values</h3>
+                            <h3>Apple Values <span class=".rotate-icon"> <img src="/plus.png" alt=""></span></h3>
                             <ul>
                                 <li class="footer-lists">Accessiblity</li>
                                 <li class="footer-lists">Education</li>
@@ -401,7 +419,7 @@
                             </ul>
                         </div>
                         <div class="footer-items">
-                            <h3>About Apple</h3>
+                            <h3>About Apple<span class=".rotate-icon"> <img src="/plus.png" alt=""></span></h3>
                             <ul>
                                 <li class="footer-lists">Newsroom</li>
                                 <li class="footer-lists">Apple Leardership</li>
@@ -463,6 +481,7 @@
         </div>
 
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
