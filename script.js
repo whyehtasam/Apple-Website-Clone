@@ -6,7 +6,7 @@ $(document).ready(function() {
         $('.footer-items h3').click(function() {
             // $(this).parent().find('span').css("transform","rotate(45deg)");
             $(this).find('span').toggleClass('rotate-icon');
-          $(this).parent().find('.footer-lists').toggle(150);
+          $(this).parent().find('.footer-lists').toggle();
         });
       } else {
         $('.footer-lists').show(); // Show .footer-lists by default on larger screens
