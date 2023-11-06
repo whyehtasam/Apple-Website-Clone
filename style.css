@@ -19,12 +19,21 @@
     height: 44px !important;
     /* background: #fbfbfdf8 !important; */
     background: rgba(22, 22, 23, .8);
-    ;
+    
     position: sticky !important;
     top: 0 !important;
     z-index: 1;
     color: rgba(255, 255, 255, .8) !important;
 
+}
+#navbar-bg{
+    height: 44px !important;
+    background-color: #000000 !important;
+    width: 100%;
+    filter: blur(1) !important;
+    position: absolute;
+    top: 0;
+    z-index: -2;
 }
 
 .nav-content {
@@ -85,11 +94,19 @@
 #landing-page {
     grid-area: landing-page !important;
     height: 591px;
-    background: #f3f2f5 !important;
+    background: #000000 !important;
+
 
     /* border: 1px solid black !important; */
 }
 
+#landing-page #img1 img{
+
+    margin-left: 24vw;
+}
+#landing-page:nth-child(1) {
+    color: white ;
+}
 h2 {
     font-size: 54px !important;
     line-height: 1.07143 !important;
@@ -114,7 +131,7 @@ h4 {
     font-weight: lighter !important;
     /* letter-spacing: .001em !important; */
     text-align: center !important;
-    color: #3987d6 !important;
+    color: #3987d6 ;
 }
 
 h4>a {
@@ -211,19 +228,26 @@ sup {
 #macbook {
     margin-bottom: 10px !important;
     height: 591px;
-    background: #fafafa !important;
-
+    /* background: #fafafa !important; */
+    background-image: url(./assets/mackbook_pro.jpg) !important;
+    background-repeat: no-repeat !important;
+    background-size: fill !important; /* This maintains the aspect ratio and scales the image to fit the container */
+    background-position: center!important;
     grid-area: macbook !important;
 
 }
 
 #iphone {
     height: 591px;
-    background: #fafafa !important;
-
+    /* background: #fafafa !important; */
+    background-image: url(./assets/iphone15.jpg) !important;
+    background-repeat: no-repeat !important;
+    background-size: fill !important; /* This maintains the aspect ratio and scales the image to fit the container */
+    background-position: center!important;
     grid-area: iphone !important;
 
 }
+#iphone .heading
 
 /* .items>* {
     position: relative !important;
