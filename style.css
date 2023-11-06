@@ -93,7 +93,7 @@
 h2 {
     font-size: 54px !important;
     line-height: 1.07143 !important;
-    /* font-weight:lighter !important; */
+    font-weight:700 !important;
     /* letter-spacing: .001em !important; */
     text-align: center !important;
     margin-top: 54px !important;
@@ -164,8 +164,8 @@ sup {
 .product-page1 {
     display: grid !important;
     grid-template-areas: 'landing-page landing-page landing-page landing-page '
+    'iphone iphone iphone iphone '
         'macbook macbook macbook macbook '
-        'iphone iphone iphone iphone '
 
         !important;
 }
