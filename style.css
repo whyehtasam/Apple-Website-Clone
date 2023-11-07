@@ -94,9 +94,21 @@
 #landing-page {
     grid-area: landing-page !important;
     height: 591px;
-    background: #000000 !important;
+    /* background: #000000 !important; */
 
-
+    background-image: url(./assets/Iphone_15_pro.jpg) !important;
+    background-repeat: no-repeat !important;
+    background-size: fill !important; /* This maintains the aspect ratio and scales the image to fit the container */
+    background-position: center!important;
+    /* border: 1px solid black !important; */
+}
+#imac{
+    grid-area: imac !important;
+    height: 591px;
+    background: url(./assets/iMac.jpg) !important;
+    background-repeat: no-repeat !important;
+    background-size: fill !important; /* This maintains the aspect ratio and scales the image to fit the container */
+    background-position: center!important;
     /* border: 1px solid black !important; */
 }
 
@@ -183,6 +195,7 @@ sup {
     grid-template-areas: 'landing-page landing-page landing-page landing-page '
     'iphone iphone iphone iphone '
         'macbook macbook macbook macbook '
+        'imac imac imac imac'
 
         !important;
 }
@@ -247,12 +260,6 @@ sup {
     grid-area: iphone !important;
 
 }
-#iphone .heading
-
-/* .items>* {
-    position: relative !important;
-} */
-
 
 
 
@@ -430,12 +437,49 @@ sup {
     #navbar {
         height: 120px !important;
     }
+    #navbar-bg{
+        height: 120px !important;
+        width: 1030px;
+    }
 
     .product-page1 {
         zoom: 1.9;
-        margin-left: -218px;
+        margin-left: 0;
 
         overflow: hidden;
+    }
+    
+    #landing-page{
+        background-image: url(./assets/Iphone_15_pro_m.jpg) !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important; /* This maintains the aspect ratio and scales the image to fit the container */
+    background-position: center!important;
+    }
+
+    #macbook {
+       
+       
+        background-image: url(./assets/mackbook_pro_m.jpg) !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important; /* This maintains the aspect ratio and scales the image to fit the container */
+        background-position: center!important;
+       
+    }
+    
+    #iphone {
+       
+        background-image: url(./assets/iphone15_m.jpg) !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important; /* This maintains the aspect ratio and scales the image to fit the container */
+        background-position: center!important;
+      
+    
+    }
+    #imac{
+        background-image: url(./assets/iMac_m.jpg) !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important; /* This maintains the aspect ratio and scales the image to fit the container */
+        background-position: center!important;
     }
 
     .product-page1>.items {
